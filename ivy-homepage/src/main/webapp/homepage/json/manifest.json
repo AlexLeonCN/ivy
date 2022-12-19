@@ -1,0 +1,45 @@
+{
+    "dir": "ltr",
+    "lang": "zh",
+    "name": "「AlexLeon」的主页！",
+    "short_name": "「AlexLeon」的主页！",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "/",
+    "background_color": "#00ffff",
+    "theme_color": "#CCFFFF",
+    "description": "「AlexLeon」的主页",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": "false",
+    "icons": [
+        {
+            "src": "/homepage/icon/128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/homepage/icon/144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/homepage/icon/192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/homepage/icon/256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/homepage/icon/512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "url": "/",
+    "manifestUrl": "/homepage/json/manifest.json",
+    "screenshots": []
+}

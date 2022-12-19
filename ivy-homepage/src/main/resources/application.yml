@@ -1,0 +1,23 @@
+server:
+  port: 80
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
+    static-path-pattern: /**
+  resources:
+    static-locations:
+    - classpath:/META-INF/resources/
+  datasource:
+    url: jdbc:mysql://localhost:3306/alexleon?serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: alexleon
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations:
+  - classpath:mapper/*.xml
+  
