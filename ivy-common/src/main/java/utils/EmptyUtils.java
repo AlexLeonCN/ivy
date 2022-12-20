@@ -1,8 +1,8 @@
-package com.hp.utils;
+package utils;
 import java.util.List;
 import java.util.Map;
 
-public class Utils {
+public class EmptyUtils {
 
     /**
      * 判断一个Object是否为空 支持list, Map, String

@@ -1,13 +1,13 @@
 package com.hp.controller;
 import com.hp.doman.ApiOneWords;
 import com.hp.mapper.ApiOneWordsMapper;
-import com.hp.utils.GsonUtils;
-import com.hp.utils.Utils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import utils.EmptyUtils;
+import utils.GsonUtils;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
@@ -18,7 +18,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/api/")
 public class ApiController {
-    private static Logger logger = LogManager.getLogger(ApiController.class.getName());
+    private static Logger logger = LoggerFactory.getLogger(ApiController.class.getName());
     @Autowired
     private ApiOneWordsMapper apiOneWordsMapper;
     /**
@@ -40,7 +40,7 @@ public class ApiController {
         logger.info("select:::"+select);
         List<ApiOneWords> wordslist = apiOneWordsMapper.findAll();
         String oneWords = "";
-        if (Utils.isNullOrEmpty(wordslist)) {
+        if (EmptyUtils.isNullOrEmpty(wordslist)) {
             oneWords = "我是个阳光的男孩";
         }else {
             int listSize = wordslist.size();

@@ -1,4 +1,4 @@
-package com.hp.utils;
+package utils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonParseException;

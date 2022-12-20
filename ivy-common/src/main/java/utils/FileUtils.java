@@ -1,4 +1,4 @@
-package com.hp.utils;
+package utils;
 
 import java.io.*;
 
